@@ -7,14 +7,28 @@
     <title>Fundo Fixo de Tela</title>
     <style>
         body {
+            height: 100vh;
+            /*
             background-color: black;
             background-image: url(ex001/imagens/wallpaper002.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center center;
+            background-attachment: fixed;
+            background-position: center center;*/
+
+            background: black url(ex001/imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
+
+
+        /* Shorthand - Background
+            color > image > position > repeat > [size] > attachment
+
+         */
+
         main {
-            height: 100vh;
+            
+            max-width: 400px;
             background-color: white;
             width: 400px;
             padding: 10px;
@@ -27,6 +41,8 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, provident natus quidem dolorem qui maiores voluptates amet ea iure voluptas vitae magni sed officiis temporibus commodi nostrum! Quidem, repudiandae at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, impedit aliquid officia eum totam aliquam voluptatum, maiores, cupiditate nulla voluptatem dicta at ducimus ea perferendis saepe temporibus. Quae, voluptates aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam animi tempora libero amet labore itaque ullam quam nisi, at deserunt illo delectus impedit, quod maxime. Maiores aliquid dolorum numquam assumenda!
+        </p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, provident natus quidem dolorem qui maiores voluptates amet ea iure voluptas vitae magni sed officiis temporibus commodi nostrum! Quidem, repudiandae at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, impedit aliquid officia eum totam aliquam voluptatum, maiores, cupiditate nulla voluptatem dicta at ducimus ea perferendis saepe temporibus. Quae, voluptates aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam animi tempora libero amet labore itaque ullam quam nisi, at deserunt illo delectus impedit, quod maxime. Maiores aliquid dolorum numquam assumenda!
         </p>
     </main>
